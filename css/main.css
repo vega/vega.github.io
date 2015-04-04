@@ -27,11 +27,16 @@ strong, b {
   float: right;
 }
 
+.pull-right {
+  float:right;
+  margin-top: -5px;
+}
+
 /* --- */
 
 #main {
-  width: 1200px;
-  margin-left: 100px;
+  width: 800px;
+  margin: auto;
 }
 
 .heading {
@@ -361,6 +366,7 @@ div.lead {
 
 .links {
 	margin-top: 10px;
+	text-align: center;
 }
 
 .paper .note, .links .note {
@@ -509,15 +515,21 @@ pre.bibtex {
 	border: 2px solid #ccc;
 }
 
+.thumbnail .desc{
+	text-align: left;
+
+}
 
 .thumbnail-img {
-  width: 360px;
+  width: 348px;
   height: 225px;
   background-size: cover;
   padding: 5px;
+  box-sizing: border-box;
   border: 4px solid white;
   margin-bottom: 8px;
 }
+
 
 .group .interests {
   margin-top: 0.5em;
