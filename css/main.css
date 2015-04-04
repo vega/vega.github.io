@@ -223,7 +223,7 @@ strong, b {
 }
 
 .thumbnail .lead {
-	text-align: left;
+  text-align: left;
 }
 
 div.lead {
@@ -365,8 +365,8 @@ div.lead {
 }
 
 .links {
-	margin-top: 10px;
-	text-align: center;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .paper .note, .links .note {
@@ -406,13 +406,13 @@ pre.bibtex {
 
 .project .thumbnail {
   float: left;
-  width: 350px;
+  width: 360px;
   margin: 0px 40px 20px 0;
   text-align: center;
 }
 
 .project .thumbnail img {
-  width: 350px;
+  width: 360px;
   /*height: 200px;*/
   padding: 5px;
   border: 1px solid #ccc;
@@ -511,17 +511,17 @@ pre.bibtex {
 }
 
 .thumbnail-wrapper {
-	display: inline-block;
-	border: 2px solid #ccc;
+  display: inline-block;
+  border: 2px solid #ccc;
 }
 
 .thumbnail .desc{
-	text-align: left;
+  text-align: left;
 
 }
 
 .thumbnail-img {
-  width: 348px;
+  width: 358px;
   height: 225px;
   background-size: cover;
   padding: 5px;
