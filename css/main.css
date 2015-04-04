@@ -509,7 +509,7 @@ pre.bibtex {
 
 .thumbnail-wrapper {
   display: inline-block;
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
 }
 
 .thumbnail .desc{
