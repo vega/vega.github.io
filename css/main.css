@@ -510,6 +510,7 @@ pre.bibtex {
 .thumbnail-wrapper {
   display: inline-block;
   border: 1px solid #ccc;
+  margin-bottom: 5px;
 }
 
 .thumbnail .desc{
@@ -531,7 +532,6 @@ pre.bibtex {
   padding: 5px;
   box-sizing: border-box;
   border: 4px solid white;
-  margin-bottom: 8px;
 }
 
 
