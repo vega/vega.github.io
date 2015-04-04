@@ -224,13 +224,6 @@ strong, b {
   letter-spacing: 2px;
 }
 
-.lead a { color: #000; }
-.lead a:hover { color: #8a5ed3; }
-
-.thumbnail .lead {
-  text-align: left;
-}
-
 div.lead {
   margin-bottom: 0.5em;
 }
@@ -521,8 +514,15 @@ pre.bibtex {
 
 .thumbnail .desc{
   text-align: left;
-
 }
+
+.thumbnail .lead {
+  text-align: left;
+  font-weight: 500;
+}
+
+.thumbnail .lead a { color: #000; }
+.thumbnail .lead a:hover { color: #8a5ed3; }
 
 .thumbnail-img {
   width: 358px;
