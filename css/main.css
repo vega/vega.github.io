@@ -94,27 +94,6 @@ strong, b {
   padding-right: 4px;
 }
 
-#logo {
-  position: absolute;
-  left: -5px;
-  top: -9px;
-  width: 99px;
-  height: 85px;
-  overflow: hidden;
-}
-
-.logo-i { fill: #939597; }
-.logo-d { fill: #652c90; }
-.logo-l { fill: #d5a928; }
-
-#logo img, #logo svg {
-  position: absolute;
-}
-
-#logo svg {
-  cursor: pointer;
-}
-
 .nav {
   margin-top: 55px;
 }
