@@ -77,7 +77,23 @@ strong, b {
 .header .lead { font-weight: 700; }
 
 .footer {
-  height: 16px;
+  margin-top: 40px;
+  height: 40px;
+  color: #aaa;
+}
+
+.footer a {
+  color: #aaa;
+  text-decoration: underline;
+}
+
+.new {
+  background-color: #AB0202;
+  color: white;
+  padding: 1px 4px;
+  font-size: 0.9em;
+  border-radius: 2px;
+  text-transform: uppercase;
 }
 
 /* --- */
