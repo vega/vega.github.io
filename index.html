@@ -5,8 +5,8 @@
     <title>Vega</title>
     <link rel="shortcut icon" href="http://trifacta.github.com/vega/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <script src="d3.v3.min.js"></script>
-    <script src="vega.min.js"></script>
+<!--     <script src="d3.v3.min.js"></script>
+    <script src="vega.min.js"></script> -->
   </head>
     <body>
      <!--<div class="gutter">
@@ -38,39 +38,44 @@
             <span class="uw">Vega</span>
 
             <!-- <span class="mark-i">Vega</span> -->
-            <span class="mark-d">Projects</span>
+            <!-- <span class="mark-d">Projects</span> -->
             <!-- <span class="mark-l">Lab</span> -->
           </div>
+          <div id="title">A Visualization Grammar</div>
           <br/>
         </div>
         <div class="content">
 
-          <div class="mission"> <a href="/about" class="at">  <span class="lead">our goal</span> is to develop a  <strong>declarative visualization grammar</strong> that serves as <strong>a format for creating, saving and sharing visualization designs</strong>. </a></div>
+          <div class="mission">
+            Vega is a declarative format for creating, saving, and sharing visualization designs. 
+            With Vega, visualizations are described in JSON, and generate interactive views using either HTML5 Canvas or SVG.
+          </div>
+
+
           <div class="header">
-            <div class="mark">Declarative Grammar</div>
+            <div class="lead">Toolkits</div>
           </div>
           
           <div class="paper project">
             <div class="thumbnail">
               <a class="thumbnail-wrapper" href="https://github.com/uwdata/vega/"><div class='thumbnail-img' style="background-image: url(images/vg.png)"></div></a>
               <div class="desc">
-                <span class="lead">
-                  <a href="">Vega</a>
-                </span> 
-                is a visualization grammar, a declarative format for creating, saving and sharing visualization designs.
-      
-                With Vega you can describe data visualizations in a JSON format, and
-                generate interactive views using either HTML5 Canvas or SVG.
+                <span class="lead">Vega</span> 
+                offers a full declarative visualization grammar, suitable for
+                expressive custom interactive visualization design and programmatic generation.
                 
                 <div class="links">
-                  <a href="editor">Online Editor</a>
+                  <p>
+                  <a href="https://github.com/trifacta/vega/wiki/Tutorial">Tutorial</a> 
                   |
-                  <a href="https://github.com/uwdata/vega/wiki/Tutorial">Tutorial</a> 
+                  <a href="https://github.com/trifacta/vega/wiki">Documentation</a> 
                   |
-                  <a href="https://github.com/uwdata/vega/wiki">Documentation</a> 
-                  |
-                  <a href="https://groups.google.com/forum/?fromgroups#!forum/vega-js">Discussion</a>
-                  
+                  <a href="https://groups.google.com/forum/?fromgroups#!forum/vega-js">Discussion Forum</a></p>
+
+
+                  <p>v1.5 (stable): <a href="http://trifacta.github.io/vega/vega.min.js">download</a>, <a href="http://trifacta.github.io/vega/editor">examples</a>, <a href="https://github.com/trifacta/vega">github</a></p>
+
+                  <p>v2.0 (dev): <a href="">download</a>, <a href="http://idl.cs.washington.edu/projects/reactive-vega/examples/editor/">examples</a>, <a href="https://github.com/uwdata/vega/tree/v2">github</a></p>                  
                 </div>
               </div>
             </div>
@@ -80,11 +85,11 @@
                 <span class="lead">
                   Vegalite
                 </span> 
-                is a high-level grammar for visual analysis, built on top of Vega. 
-                Vegalite provides ease-of-use comparable to tools like ggplot or Tableau, but generates full-featured Vega specifications as output.
+                provides a higher-level grammar for visual analysis, comparable
+                to ggplot or Tableau, that generates complete Vega specifications.
 
                 <div class="links">
-                  <a href="http://uwdata.github.io/vegalite">Online Editor</a>
+                  <p><a href="http://uwdata.github.io/vegalite">Online Editor</a></p>
                 </div>
               </div>
 
@@ -92,7 +97,7 @@
           </div>
           <div style="clear:both"></div>
           <div class="header">
-            <div class="mark">Tools</div>
+            <div class="lead">Systems</div>
           </div>
           <div class="paper project">
             <div class="thumbnail">
@@ -102,17 +107,10 @@
                 <span class="lead">
                   <a href="http://idl.cs.washington.edu/projects/lyra/">Lyra</a>
                 </span> 
-                is an interactive environment that enables custom visualization design without writing any code, 
-                allowing designers to create custom visualizations that are 
-                comparable to hand-coded visualizations built with D3 or Processing.
-
-                
+                is an interactive environment that enables custom visualization design. 
+                Without writing any code, designers can create visualizations on-par with hand-coded D3 and Processing.                
                 <div class="links">
-                  <a href="https://github.com/uwdata/lyra/wiki">Wiki</a> 
-                  |
-                  <a href="https://groups.google.com/forum/#!forum/lyra-vde">Discussion</a>
-                  |
-                  <a href="http://idl.cs.washington.edu/projects/lyra/app/">Online Demo</a>
+                  <p><a href="http://idl.cs.washington.edu/projects/lyra/app/">Online App</a> | <a href="http://idl.cs.washington.edu/projects/lyra/#examples">Examples</a> | <a href="https://github.com/uwdata/lyra/wiki">Documentation</a> | <a href="http://idl.cs.washington.edu/projects/lyra/">More Info</a>
                 </div>
               </div>
             </div>
@@ -122,12 +120,13 @@
                 <span class="lead">
                   PoleStar
                 </span> 
-                is a web-based visualization specification interface inspired by Tableau built on top of Vegalite, allowing analysts to easily create visualizations. 
-
+                is a web-based visualization specification interface, inspired by Tableau.
+                Analysts can rapidly generate visualizations as part of the 
+                data exploration process. 
 
                 <div class="links">
-                  <a href="http://uwdata.github.io/polestar">Online Demo</a>
-                </div><br/><br/>
+                  <p><a href="http://uwdata.github.io/polestar">Online App</a></p>
+                </div>
               </div>
             </div>
             <div class="thumbnail">
@@ -136,9 +135,11 @@
                 <span class="lead">
                   Voyager
                 </span> 
-                is a visualization browser for open-ended data exploration.  Voyager generates a gallery of visualizations from the input.
+                is a visualization browser for open-ended data exploration.  
+                It provides a gallery of recommended visualizations, ranked by both
+                data properties and perceptual principles.
                 <div class="links">
-                  <a href="http://uwdata.github.io/voyager">Online Demo</a>
+                  <p><a href="http://uwdata.github.io/voyager">Online App</a></p>
                 </div>
               </div>
             </div>
@@ -147,14 +148,14 @@
         <div class="footer">
         </div>
       </div>
-      <script>
+<!--       <script>
         document.write('<script src="/static/lib/vendor/'+('__proto__' in {}?'zepto':'jquery')+'.min.js"><\/script>');
       </script>
       <script src="/static/lib/vendor/underscore.min.js"></script>
       <script src="/static/lib/vendor/backbone.min.js"></script>
       <script src="/static/lib/vendor/d3.v3.min.js"></script>
       <script src="/static/lib/idl.min.js"></script>
-      <script type="text/javascript">idl.init();</script>
+      <script type="text/javascript">idl.init();</script> -->
     </body>
 <!-- 
     <div id="side">

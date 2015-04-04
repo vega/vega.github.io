@@ -5,12 +5,12 @@ body {
 }
 
 a {
-  color: #000;
+  color: #8a5ed3;
   text-decoration: none;
 }
 
 a:hover {
-  color: #8a5ed3;
+  text-decoration: underline;
 }
 
 img {
@@ -73,6 +73,8 @@ strong, b {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+.header .lead { font-weight: 700; }
 
 .footer {
   height: 16px;
@@ -169,8 +171,8 @@ strong, b {
 .mission {
   width: 800px;
   margin-top: -3px;
-  margin-bottom: 0.8em;
-  font-size: 20px;
+  margin-bottom: 18px;
+  font-size: 16px;
 }
 
 .spotlight {
@@ -221,6 +223,9 @@ strong, b {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+.lead a { color: #000; }
+.lead a:hover { color: #8a5ed3; }
 
 .thumbnail .lead {
   text-align: left;
@@ -366,7 +371,6 @@ div.lead {
 
 .links {
   margin-top: 10px;
-  text-align: center;
 }
 
 .paper .note, .links .note {
