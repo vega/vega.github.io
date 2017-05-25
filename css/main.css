@@ -2,6 +2,7 @@ body {
   font-family: Avenir, Helvetica Neue, Helvetica, Arial;
   padding-left: 12px;
   padding-top: 8px;
+  text-decoration-skip: ink;
 }
 
 a {
