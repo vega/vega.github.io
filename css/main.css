@@ -525,11 +525,36 @@ pre.bibtex {
   width: 358px;
   height: 225px;
   background-size: cover;
+  background-repeat: no-repeat;
   padding: 5px;
   box-sizing: border-box;
   border: 4px solid white;
 }
 
+.thumbnail-img-vega {
+  background-image: url(../images/vg.png);
+}
+
+.thumbnail-img-vega-lite {
+  background-image: url(../images/vega-lite.png);
+}
+
+.thumbnail-img-lyra {
+  background-image: url(../images/lyra.png);
+}
+.thumbnail-img-polestar {
+  background-image: url(../images/polestar.png); 
+  background-position: top-left;
+}
+.thumbnail-img-voyager {
+  background-image: url(../images/voyager_main.png);
+  background-position: top-left;
+}
+.thumbnail-img-compass {
+  background-image: url(../images/compass.png);
+  background-size: contain;
+  background-position: center center;
+}
 
 .group .interests {
   margin-top: 0.5em;
@@ -557,4 +582,8 @@ pre.bibtex {
 .about .quote,
 .about .para {
   line-height: 24px;
+}
+
+.clear-fix {
+  clear: both;
 }
