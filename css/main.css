@@ -397,24 +397,6 @@ pre.bibtex {
   font-weight: 600;
 }
 
-.project .thumbnail {
-  float: left;
-  width: 360px;
-  margin: 0px 40px 20px 0;
-  text-align: center;
-}
-
-.project .thumbnail img {
-  width: 360px;
-  /*height: 200px;*/
-  padding: 5px;
-  border: 1px solid #ccc;
-}
-
-.project .thumbnail img:hover {
-  background: rgba(138, 94, 211, 0.5);
-}
-
 .project a.btn {
   display: inline-block;
   font-weight: 400;
@@ -434,6 +416,55 @@ pre.bibtex {
 .project .btn:hover {
   background-color: #8A5ED3;
   border-color: #8A5ED3;
+}
+
+.thumbnail-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 1.5em;
+  clear: left;
+}
+
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+.thumbnail .desc {
+  text-align: left;
+}
+
+.thumbnail .lead {
+  text-align: left;
+  font-weight: 500;
+}
+
+.thumbnail .lead a {
+  color: #000;
+}
+
+.thumbnail .lead a:hover {
+  color: #8a5ed3;
+}
+
+.thumbnail--image {
+  height: 225px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.thumbnail--image img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
 }
 
 /* --- */
@@ -538,58 +569,6 @@ pre.bibtex {
 .about .quote,
 .about .para {
   line-height: 24px;
-}
-
-.thumbnail-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
-}
-
-.thumbnail-wrapper {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 20px;
-  margin-bottom: 1.5em;
-  clear: left;
-}
-
-.thumbnail {
-  display: flex;
-  flex-direction: column;
-  width: calc(50% - 20px);
-  box-sizing: border-box;
-}
-
-.thumbnail .desc {
-  text-align: left;
-}
-
-.thumbnail .lead {
-  text-align: left;
-  font-weight: 500;
-}
-
-.thumbnail .lead a {
-  color: #000;
-}
-
-.thumbnail .lead a:hover {
-  color: #8a5ed3;
-}
-
-.thumbnail img {
-  object-fit: cover;
-  width: 100%;
-  min-height: 100%;
-  max-height: 100%;
-}
-
-.thumbnail--image {
-  height: 225px;
-  padding: 4px;
-  border: 1px solid #ccc;
-  margin-bottom: 16px;
 }
 
 @media only screen and (max-width: 425px) {
