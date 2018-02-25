@@ -1,8 +1,5 @@
 body {
-  font-family: Avenir, Helvetica Neue, Helvetica, Arial;
-  padding-left: 12px;
-  padding-top: 8px;
-  text-decoration-skip: ink;
+  font-family: Avenir, 'Helvetica Neue', Helvetica, Arial;
 }
 
 a {
@@ -18,7 +15,8 @@ img {
   border: none;
 }
 
-strong, b {
+strong,
+b {
   font-weight: 600;
 }
 
@@ -29,15 +27,19 @@ strong, b {
 }
 
 .pull-right {
-  float:right;
+  float: right;
   margin-top: -5px;
 }
 
 /* --- */
 
 #main {
-  width: 800px;
-  margin: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 16px;
 }
 
 .heading {
@@ -60,14 +62,15 @@ strong, b {
 
 .header .mark {
   font-size: 28px;
+  margin-right: 12px;
 }
 
-.header .mark, #title {
+.header .mark,
+#title {
   display: inline-block;
 }
 
 .header #title {
-  margin-left: 12px;
   font-size: 19px;
   font-weight: 100;
   color: #666;
@@ -75,7 +78,9 @@ strong, b {
   letter-spacing: 2px;
 }
 
-.header .lead { font-weight: 700; }
+.header .lead {
+  font-weight: 700;
+}
 
 .footer {
   margin-top: 40px;
@@ -91,7 +96,7 @@ strong, b {
 .new {
   background-color: #AB0202;
   color: white;
-  padding: 1px 4px;
+  padding: 1px 4px 1px 6px;
   font-size: 0.9em;
   border-radius: 2px;
   text-transform: uppercase;
@@ -115,7 +120,7 @@ strong, b {
   margin-top: 55px;
 }
 
-.nav > a {
+.nav>a {
   font-size: 10px;
   font-weight: 500;
   text-transform: uppercase;
@@ -139,6 +144,7 @@ strong, b {
   border: 1px solid #fff;
   border-radius: 4px;
 }
+
 .twitter:hover {
   background-color: #ca9eff;
   border-color: #8a5ed3;
@@ -165,8 +171,7 @@ strong, b {
 /* --- */
 
 .mission {
-  width: 800px;
-  margin-top: -3px;
+  margin-top: -4px;
   margin-bottom: 18px;
   font-size: 16px;
 }
@@ -229,7 +234,8 @@ div.lead {
   width: 200px;
 }
 
-.update, .course {
+.update,
+.course {
   font-size: 14px;
   margin-bottom: 1em;
 }
@@ -274,25 +280,25 @@ div.lead {
 
 /* --- */
 
-.pub > .title {
+.pub>.title {
   font-size: 19px;
   font-weight: 600;
 }
 
-.pub > .authors {
+.pub>.authors {
   font-size: 16px;
   margin-bottom: 1em;
 }
 
-.pub > .figure {
+.pub>.figure {
   margin: 1.5em 0 1.5em 25px;
 }
 
-.pub > .figure img {
+.pub>.figure img {
   max-width: 700px;
 }
 
-.pub > .figure .caption {
+.pub>.figure .caption {
   font-size: 13px;
   margin-right: 25px;
 }
@@ -332,19 +338,6 @@ div.lead {
   clear: left;
 }
 
-.paper .thumbnail {
-  float: left;
-  margin-top: 3px;
-}
-
-.paper .thumbnail a img {
-  border-radius: 8px;
-}
-
-.paper .thumbnail a img:hover {
-  box-shadow: 2px 2px 18px #8a5ed3;
-}
-
 .paper .entry {
   margin-left: 138px;
   line-height: 1.2em;
@@ -362,7 +355,8 @@ div.lead {
   margin-top: 10px;
 }
 
-.paper .note, .links .note {
+.paper .note,
+.links .note {
   font-weight: 500;
 }
 
@@ -373,8 +367,8 @@ pre.bibtex {
   white-space: pre-wrap;
 }
 
-.project .teaser-img { 
-  position: relative; 
+.project .teaser-img {
+  position: relative;
 }
 
 .project .play-button {
@@ -385,9 +379,13 @@ pre.bibtex {
   cursor: pointer;
 }
 
-.project .play-button:hover { opacity: 0.8; }
+.project .play-button:hover {
+  opacity: 0.8;
+}
 
-.project .teaser-video { display: none; }
+.project .teaser-video {
+  display: none;
+}
 
 .project .title sup {
   font-weight: 100;
@@ -395,23 +393,9 @@ pre.bibtex {
   color: #666;
 }
 
-.project .abstract a { font-weight: 600; }
-
-.project .thumbnail {
-  float: left;
-  width: 360px;
-  margin: 0px 40px 20px 0;
-  text-align: center;
+.project .abstract a {
+  font-weight: 600;
 }
-
-.project .thumbnail img {
-  width: 360px;
-  /*height: 200px;*/
-  padding: 5px;
-  border: 1px solid #ccc;
-}
-
-.project .thumbnail img:hover { background: rgba(138, 94, 211, 0.5); }
 
 .project a.btn {
   display: inline-block;
@@ -434,6 +418,55 @@ pre.bibtex {
   border-color: #8A5ED3;
 }
 
+.thumbnail-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 1.5em;
+  clear: left;
+}
+
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+.thumbnail .desc {
+  text-align: left;
+}
+
+.thumbnail .lead {
+  text-align: left;
+  font-weight: 500;
+}
+
+.thumbnail .lead a {
+  color: #000;
+}
+
+.thumbnail .lead a:hover {
+  color: #8a5ed3;
+}
+
+.thumbnail--image {
+  height: 225px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.thumbnail--image img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
 /* --- */
 
 .people .heading {
@@ -449,7 +482,8 @@ pre.bibtex {
   column-count: 3;
 }
 
-.person, .group {
+.person,
+.group {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -459,9 +493,14 @@ pre.bibtex {
   height: 176px;
   overflow: hidden;
 }
-.group, .group img { width: 256px; }
 
-.person a, .group a {
+.group,
+.group img {
+  width: 256px;
+}
+
+.person a,
+.group a {
   position: absolute;
 }
 
@@ -470,7 +509,8 @@ pre.bibtex {
   width: 123px;
   opacity: 0.7;
 }
-.person img:hover { 
+
+.person img:hover {
   opacity: 0.9;
 }
 
@@ -503,34 +543,6 @@ pre.bibtex {
   font-size: 16px;
 }
 
-.thumbnail-wrapper {
-  display: inline-block;
-  border: 1px solid #ccc;
-  margin-bottom: 5px;
-}
-
-.thumbnail .desc{
-  text-align: left;
-}
-
-.thumbnail .lead {
-  text-align: left;
-  font-weight: 500;
-}
-
-.thumbnail .lead a { color: #000; }
-.thumbnail .lead a:hover { color: #8a5ed3; }
-
-.thumbnail-img {
-  width: 358px;
-  height: 225px;
-  background-size: cover;
-  padding: 5px;
-  box-sizing: border-box;
-  border: 4px solid white;
-}
-
-
 .group .interests {
   margin-top: 0.5em;
   font-size: 14px;
@@ -557,4 +569,14 @@ pre.bibtex {
 .about .quote,
 .about .para {
   line-height: 24px;
+}
+
+@media only screen and (max-width: 425px) {
+  .thumbnail-wrapper {
+    flex-direction: column;
+  }
+  .thumbnail {
+    margin-top: 16px;
+    width: 100%;
+  }
 }
