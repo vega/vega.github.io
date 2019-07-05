@@ -445,14 +445,6 @@ pre.bibtex {
   font-weight: 500;
 }
 
-.thumbnail .lead a {
-  color: #000;
-}
-
-.thumbnail .lead a:hover {
-  color: #8a5ed3;
-}
-
 .thumbnail--image {
   height: 225px;
   padding: 4px;
