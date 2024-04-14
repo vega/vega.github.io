@@ -33,18 +33,15 @@
     <div id="main">
         <div class="header">
             <div class="pull-right">
-                <a href="https://www.trifacta.com/" title="Trifacta">
-                    <img src="images/trifacta-logo.png" />
+                <a href="https://www.csail.mit.edu/" title="MIT CSAIL">
+                    <img src="images/mit-csail-logo.png" />
                 </a> &nbsp;
                 <a href="https://idl.cs.washington.edu/" title="Interactive Data Lab">
                     <img src="images/idl-logo.png" />
                 </a>
             </div>
             <div class="mark">
-                <span class="uw">Vega &amp; Vega-Lite</span>
-                <!-- <span class="mark-i">Vega</span> -->
-                <!-- <span class="mark-d">Projects</span> -->
-                <!-- <span class="mark-l">Lab</span> -->
+                <span class="uw">Vega Projects</span>
             </div>
             <div id="title">
                 Visualization Grammars
@@ -53,8 +50,8 @@
         </div>
         <div class="content">
             <div class="mission">
-                Vega is a declarative format for creating, saving, and sharing visualization designs. With Vega, visualizations are described
-                in JSON, and generate interactive views using either HTML5 Canvas or SVG.
+                The Vega projects provide an ecosystem of tools for declarative data visualizations. 
+                The various components of this ecosystem build on each other providing different levels of abstraction.
             </div>
             <div class="header">
                 <div class="lead">Toolkits</div>
@@ -76,7 +73,7 @@
                         </span>
                         is a visualization grammar, a declarative language for creating, saving, and sharing interactive visualization designs. With
                         Vega, you can describe the visual appearance and interactive behavior of a visualization in a JSON
-                        format, and generate web-based views using Canvas or SVG.
+                        format, and generate web-based views using HTML5 Canvas or SVG.
                         <div class="links">
                             <p>
                                 <a href="https://vega.github.io/vega/examples/">Examples</a>
@@ -128,7 +125,9 @@
             </div>
             <!-- /VEGA AND VEGA LITE -->
 
+            <!-- VEGA ALTAIR AND VEGAFUSION -->
             <div class="thumbnail-wrapper">
+
                 <!-- Vega-Altair -->
                 <div class="thumbnail">
                     <div class="thumbnail--image">
@@ -158,138 +157,278 @@
                     </div>
                 </div>
                 <!-- /Vega-Altair -->
+
+                <!-- VegaFusion -->
+                <div class="thumbnail">
+                    <div class="thumbnail--image">
+                        <a href="https://vegafusion.io/">
+                            <img src="images/vegafusion.png" alt="VegaFusion" />
+                        </a>
+                    </div>
+                    <div class="desc">
+                        <span class="lead">
+                            <a href="https://vegafusion.io/">VegaFusion</a>
+                        </span>
+                        provides serverside acceleration for the Vega visualization grammar. While not limited to Python, 
+                        an initial application of VegaFusion is the acceleration of the Vega-Altair Python interface to Vega-Lite.
+                        <div class="links">
+                            <p>
+                                <a href="https://vegafusion.io/example_gallery.html">Examples</a>
+                                |
+                                <a href="https://vegafusion.io/index.html">Docs</a>
+                                |
+                                <a href="https://github.com/vega/vegafusion">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /VegaFusion -->
             </div>
 
             <div class="header">
                 <div class="lead">Systems</div>
             </div>
 
-            <!-- LYRA AND POLESTAR -->
+            <!-- VEGA EMBED AND VEGA EDITOR -->
             <div class="thumbnail-wrapper">
 
-                <!-- Lyra -->
+                <!-- Vega-Embed -->
                 <div class="thumbnail">
                     <div class="thumbnail--image">
-                        <a href="https://idl.cs.washington.edu/projects/lyra/">
-                            <img src="images/lyra.png" alt="Lyra" />
+                        <a href="https://github.com/vega/vega-embed/">
+                            <img src="images/vega-embed.png" alt="Vega-Embed" />
                         </a>
                     </div>
                     <div class="desc">
                         <span class="lead">
-                            <a href="https://idl.cs.washington.edu/projects/lyra/">Lyra</a>
+                            <a href="https://github.com/vega/vega-embed/">Vega-Embed</a>
                         </span>
-                        is an interactive environment that enables custom visualization design. Without writing any code, designers can create visualizations
-                        on-par with hand-coded D3 and Processing.
+                        makes it easy to embed interactive Vega and Vega-Lite views into web pages. With Vega-Embed you can
+                        publish Vega visualizations as embedded web components with interactive parameters.
                         <div class="links">
                             <p>
-                                <a href="https://idl.cs.washington.edu/projects/lyra/app/">Online App</a>
+                                <a href="https://www.jsdelivr.com/package/npm/vega-embed">jsDelivr</a>
                                 |
-                                <a href="https://idl.cs.washington.edu/projects/lyra/#examples">Examples</a>
+                                <a href="https://vega.github.io/vega-lite/usage/embed.html">Documentation</a>
                                 |
-                                <a href="https://github.com/vega/lyra/wiki">Documentation</a>
-                                |
-                                <a href="https://github.com/vega/lyra">GitHub</a>
+                                <a href="https://github.com/vega/vega-embed">GitHub</a>
                             </p>
                         </div>
                     </div>
                 </div>
-                <!-- /Lyra -->
+                <!-- /Vega-Embed -->
 
 
-                <!-- Voyager -->
+                <!-- Vega-Editor -->
                 <div class="thumbnail">
                     <div class="thumbnail--image">
-                        <a href="https://www.github.com/vega/voyager">
-                            <img src="images/voyager_main.png" alt="Voyager" />
+                        <a href="https://github.com/vega/editor">
+                            <img src="images/editor.png" alt="Vega-Editor" />
                         </a>
                     </div>
                     <div class="desc">
                         <span class="lead">
-                            <a href="https://www.github.com/vega/voyager">Voyager</a>
+                            <a href="https://github.com/vega/editor">Vega-Editor</a>
                         </span>
-                        is a visualization interface for data exploration. It provides an interface for specifying Vega-Lite specification,
-                        with chart recommendation powered by the Compass visualization recommender engine.
+                        is a web application for authoring and testing Vega and Vega-Lite visualizations. It includes a number of example specifications that showcase both the visual encodings and interaction techniques. 
                         <div class="links">
                             <p>
-                                <a href="https://vega.github.io/voyager">Online App</a>
+                                <a href="https://vega.github.io/editor/">Online Editor</a>
                                 |
-                                <a href="https://www.github.com/vega/voyager">GitHub</a>
+                                <a href="https://github.com/vega/editor">GitHub</a>
                             </p>
                         </div>
                     </div>
                 </div>
-                <!-- /Voyager -->
+                <!-- /Vega-Editor -->
 
             </div>
-            <!-- LYRA AND POLESTAR END -->
-
-            <!-- VOYAGER AND COMPASSQL -->
-            <div class="thumbnail-wrapper">
-
-
-                <!-- Polestar -->
-                <!--<div class="thumbnail">
-                    <div class="thumbnail--image">
-                        <a href="https://www.github.com/vega/polestar">
-                            <img src="images/polestar.png" alt="Polestar" />
-                        </a>
-                    </div>
-                    <div class="desc">
-                        <span class="lead">
-                            <a href="https://www.github.com/vega/polestar">Polestar</a>
-                        </span>
-                        is a web-based visualization specification interface, inspired by Tableau. Analysts can rapidly generate visualizations as
-                        part of the data exploration process.
-                        <div class="links">
-                            <p>
-                                <a href="https://vega.github.io/polestar">Online App</a>
-                                |
-                                <a href="https://www.github.com/vega/polestar">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>-->
-                <!-- /Polestar -->
-
-                <!-- Compassql -->
-                <div class="thumbnail">
-                    <div class="thumbnail--image">
-                        <a href="https://www.github.com/vega/compassql">
-                            <img src="images/compass.png" alt="Compassql" />
-                        </a>
-                    </div>
-                    <div class="desc">
-                        <span class="lead">
-                            <a href="https://www.github.com/vega/compassql">Compassql</a>
-                        </span>
-                        is a visualization recommendation engine. Given user query, it suggests visualizations, ranked by both data properties and
-                        perceptual principles.
-                        <div class="links">
-                            <p>
-                                <a href="https://www.github.com/vega/compassql">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Compassql -->
-
-            </div>
-            <!-- VOYAGER AND COMPASSQL -->
+            <!-- VEGA EMBED AND VEGA EDITOR END -->
 
             <div class="header">
                 <div class="lead">
-                    Vega's 3rd Party Integration
+                    Components
                 </div>
             </div>
 
-            <div class="header">
-                <div class="lead">Vega-Lite's 3rd Party Integration</div>
-                <p>
-                    <a href="https://vega.github.io/vega-lite/applications.html">
-                        Check out the list of applications on the Vega-Lite website.
-                    </a>
-                </p>
+            <!-- VEGA DATASETS AND VEGA THEMES -->
+            <div class="thumbnail-wrapper">
+
+                <!-- Vega-Datasets -->
+                <div class="thumbnail">
+                    <div class="desc">
+                        <span class="lead">
+                            <a href="https://github.com/vega/vega-datasets">Vega-Datasets</a>
+                        </span>
+                        is a collection of datasets used in Vega and Vega-Lite examples.
+                        <div class="links">
+                            <p>
+                                <a href="https://cdn.jsdelivr.net/npm/vega-datasets">jsDelivr</a>
+                                |
+                                <a href="https://github.com/vega/vega-datasets">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Vega-Datasets -->
+
+                <!-- Vega-Themes -->
+                <div class="thumbnail">
+                    <div class="desc">
+                        <span class="lead">
+                            <a href="https://github.com/vega/vega-themes">Vega Themes</a>
+                        </span>
+                        is a configuration object with default settings for a variety of visual properties such as colors, typefaces, line widths and spacing.
+                        <div class="links">
+                            <p>
+                                <a href="https://www.jsdelivr.com/package/npm/vega-themes">jsDelivr</a>
+                                |
+                                <a href="https://observablehq.com/@vega/vega-themes-demo">Demo page</a>
+                                |
+                                <a href="https://github.com/vega/vega-themes">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Vega-Themes -->
+
             </div>
+            <!-- VEGA DATASETS AND VEGA THEMES END -->
+
+            <!-- VEGA TOOLTIPS AND VL CONVERT -->
+            <div class="thumbnail-wrapper">
+
+                <!-- Vega-Tooltips -->
+                <div class="thumbnail">
+                    <div class="desc">
+                        <span class="lead">
+                            <a href="https://github.com/vega/vega-tooltip">Vega-Tooltips</a>
+                        </span>
+                        is a tooltip plugin for Vega and Vega-Lite visualizations. This plugin implements a custom tooltip handler for Vega that uses custom HTML tooltips instead of the HTML title attribute.
+                        <div class="links">
+                            <p>
+                                <a href="https://www.jsdelivr.com/package/npm/vega-tooltip">jsDelivr</a>
+                                |
+                                <a href="https://github.com/vega/vega-tooltip">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Vega-Tooltips -->
+
+                <!-- VL-Convert -->
+                <div class="thumbnail">
+                    <div class="desc">
+                        <span class="lead">
+                            <a href="https://github.com/vega/vl-convert">Vega Convert</a>
+                        </span>
+                        provides a Rust library, CLI utility, and Python library for converting Vega-Lite chart specifications into static images (SVG or PNG) or Vega chart specifications.
+                        <div class="links">
+                            <p>
+                                <a href="https://github.com/vega/vl-convert/tree/main/vl-convert-python#readme">Python Examples</a>
+                                |
+                                <a href="https://github.com/vega/vl-convert">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /VL-Convert -->
+
+            </div>
+            <!-- VEGA TOOLTIPS AND VL CONVERT END -->
+
+            <!-- ALTAIR TILES AND DASH VEGA COMPONENTS -->
+            <div class="thumbnail-wrapper">
+
+                <!-- Altair-Tiles -->
+                <div class="thumbnail">
+                    <div class="desc">
+                        <span class="lead">
+                            <a href="https://github.com/vega/altair_tiles">Altair-Tiles</a>
+                        </span>
+                        can be used to add tiles from any xyz tile provider such as OpenStreetMap to your Altair chart.
+                        <div class="links">
+                            <p>
+                                <a href="https://vega.github.io/altair_tiles/intro.html">Documentation</a>
+                                |
+                                <a href="https://github.com/vega/altair_tiles">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Altair-Tiles -->
+
+                <!-- Dash-Vega-Components -->
+                <div class="thumbnail">
+                    <div class="desc">
+                        <span class="lead">
+                            <a href="https://github.com/vega/vl-convert">Dash Vega Components</a>
+                        </span>
+                        can be used to display Vega-Altair charts in Dash applications.
+                        <div class="links">
+                            <p>
+                                <a href="https://dash.plotly.com/dash-vega-components">Dash Documentation</a>
+                                |
+                                <a href="https://github.com/vega/dash-vega-components">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Dash-Vega-Components -->
+
+            </div>
+            <!-- ALTAIR TILES AND DASH VEGA COMPONENTS END -->
+
+            <div class="header">
+                <div class="lead">Governance</div>
+            </div>
+
+            <!-- GOVERNANCE AND ROADMAP -->
+            <div class="thumbnail-wrapper">
+
+                <!-- Governance -->
+                <div class="thumbnail">
+                    <div class="desc">
+                        <span class="lead">
+                            <a href="https://github.com/vega/.github">Governance</a>
+                        </span>
+                        Community health files for the Vega Projects.
+                        <div class="links">
+                            <p>
+                                <a href="https://github.com/vega/.github/blob/main/CHARTER.md">Charter</a>
+                                |
+                                <a href="https://github.com/vega/.github/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a>
+                                |
+                                <a href="https://github.com/vega/.github/blob/main/STEERING-COMMITTEE.md">Steering-Committee</a>
+                                |
+                                <a href="https://github.com/vega/.github">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Governance -->
+
+
+                <!-- Roadmap -->
+                <div class="thumbnail">
+                    <div class="desc">
+                        <span class="lead">
+                            <a href="https://github.com/vega/editor">Roadmap</a>
+                        </span>
+                        provides our ideas to refine and extend the feature set and improve scalability to larger datasets. All of the planned improvements will benefit the whole Vega ecosystem. 
+                        <div class="links">
+                            <p>
+                                <a href="https://github.com/orgs/vega/projects/9/views/3?pane=info">Project Board</a>
+                                |
+                                <a href="https://github.com/vega/roadmap">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Roadmap -->
+
+            </div>
+            <!-- GOVERNANCE AND ROADMAP END -->
 
         </div>
 
