@@ -60,6 +60,10 @@ b {
   margin-bottom: 18px;
 }
 
+.content .header {
+  margin-top: 2em;
+}
+
 .header .mark {
   font-size: 28px;
   margin-right: 12px;
@@ -561,6 +565,45 @@ pre.bibtex {
 .about .quote,
 .about .para {
   line-height: 24px;
+}
+
+/* --- sponsor / content pages --- */
+
+.sponsor-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 1em 0 1.5em;
+}
+
+.sponsor-table th,
+.sponsor-table td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.sponsor-table th {
+  font-weight: 600;
+  background-color: #f9f9f9;
+}
+
+.sponsor-table tbody tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+.content-list {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0.5em 0 1.5em;
+  padding-left: 1.5em;
+}
+
+.content-list li {
+  margin-bottom: 0.75em;
 }
 
 @media only screen and (max-width: 425px) {
