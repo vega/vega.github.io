@@ -569,6 +569,10 @@ pre.bibtex {
 
 /* --- sponsor / content pages --- */
 
+.sponsor-table-wrapper {
+  overflow-x: auto;
+}
+
 .sponsor-table {
   width: 100%;
   border-collapse: collapse;
